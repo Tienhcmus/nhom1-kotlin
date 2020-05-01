@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_already"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0001FC">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="110dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="639dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="71dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Skip for now"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connect_fb"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#415A93"
+        android:drawableLeft="@drawable/fb_icon"
+        android:text="Connect with Facebook"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connec_gg" />
+
+    <Button
+        android:id="@+id/connec_gg"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="3dp"
+        android:drawableLeft="@drawable/gg_icon"
+        android:gravity="center"
+        android:text="Connect with Google"
+        android:textAllCaps="false"
+        android:textColor="#0001FC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/connect_fb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_ac" />
+
+    <TextView
+        android:id="@+id/connexion"
+        android:layout_width="128dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="142dp"
+        android:inputType="textAutoCorrect"
+        android:scrollbarStyle="insideOverlay"
+        android:text="connexion"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/create_ac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Connexion" />
+
+    <Button
+        android:id="@+id/create_ac"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="50dp"
+        android:text="Create an account"
+        android:textAllCaps="false"
+        android:textColor="#0001FC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/connec_gg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connexion" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="43dp"
+        android:text="Already have an account ?"
+        android:textColor="#FBDF00"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect_fb" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="75dp"
+        android:text="Login"
+        android:textColor="#FBDF00"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/connect_fb" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="login,textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
