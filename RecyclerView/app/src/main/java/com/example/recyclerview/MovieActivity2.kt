@@ -25,7 +25,8 @@ class MovieActivity2 : AppCompatActivity() {
             val url = data.getString("poster_path")
 
             aa_Title2.text = title
-            aa_Rating2.text = rating.toString()
+            ratingBar3.rating = rating/2
+            rating3.text = rating.toString()
             aa_Releasedate2.text = release
             aa_description2.text = descrition
 
